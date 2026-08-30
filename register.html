@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tilux Beacon</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<style> 
+    body{
+        justify-content: center;
+    }
+    section{
+        margin-top: 0;
+        height: 400px;
+    }
+    section .register div{
+        position: relative;
+    }
+    section .register div input{
+        width: 100% !important;
+    }
+    section .register div img{
+        position: absolute;
+        width: 20px;
+        right: 1%;
+        top: 25%;
+    }
+</style>
+<body>
+	<section id="section">
+		<div class="register">
+			<h2>Pls fill in your information's</h2>
+			<h3>Your Username:</h3>
+			<div id="usernameShow">
+                <input onkeyup="process()" type="text" placeholder="Enter your username" required id="username">
+                <span class="error"><img src="images/c2b60795-574d-4a54-bb22-26e1bd9cb160.svg" alt=""></span>           
+            </div>
+			<h3>Your Email Address:</h3>
+			<div id="emailShow">
+                <input onkeyup="process()" type="email" placeholder="Enter your email" required id="email">
+                <span class="error"><img src="images/c2b60795-574d-4a54-bb22-26e1bd9cb160.svg" alt=""></span>            
+            </div>
+			<h3>Your Password:</h3>
+			<div id="passwordShow">
+                <input onkeyup="process()" type="email" placeholder="Enter your email" required id="password">
+                <span class="error"><img src="images/c2b60795-574d-4a54-bb22-26e1bd9cb160.svg" alt=""></span>            
+            </div>
+			<h3>Your Profession:</h3>
+			<div id="professionalShow">
+                <input onkeyup="process()" type="text" placeholder="Enter Your Profession" id="profession">
+                <span class="error"><img src="images/c2b60795-574d-4a54-bb22-26e1bd9cb160.svg" alt=""></span>            
+            </div>
+			<button type="submit" id="createAccount">Create account</button>
+		</div>
+	</section>
+</body>
+<script src="register.js"></script>
+</html>

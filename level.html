@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+        height: auto;
+        background:linear-gradient(#000000d7, #000000c5), url("images/pexels-pixabay-46253.jpg") ;
+        background-position: center;
+        background-size: cover;
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        overflow-x: hidden;
+        align-items: center;
+    }
+    div{
+        width: 98%;
+        flex-direction: column;
+        display: flex;
+        max-width: 700px;
+        gap: 0.5rem;
+        margin-top: 7rem;
+    }
+    div button{
+        padding: 12px 0px;
+        border-radius: 20px;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.877), 5px 5px 10px rgba(255, 255, 255, 0.664);
+    }
+    div button:hover{
+        background-color: orange;
+    }
+</style>
+<body>
+    <div>
+        <button>level1</button>
+        <button>level2</button>
+        <button>level3</button>
+        <button>level4</button>
+        <button>level5</button>
+        <button>level6</button>
+        <button>level7</button>
+        <button>level8</button>
+        <button>level9</button>
+        <button>level10</button>
+        <button>level11</button>
+        <button>level12</button>
+    </div>
+</body>
+<script>
+    let levelCount = String(localStorage.getItem("TiluxBeaconLevelCount"))
+    let text = `level${levelCount}`
+    let counter = 0
+    let buttons = document.querySelectorAll("button")
+    buttons.forEach((button)=>{
+        if(text == button.innerText){
+            button.style.border = `7px solid rgba(255, 166, 0, 0.623)`
+        }
+        button.addEventListener("click", ()=>{
+            let text = String(button.innerText)
+            window.location.href = `${text}.html`
+        })
+    })
+</script>
+</html>

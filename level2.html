@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+		<div>
+			<button id="pause">Pause</button>
+			<Button>HELP</Button>
+		</div>
+		<div id="header">
+			<h3>username: Username</h3>
+		</div>
+	</header>
+	<audio src="music/Coldplay-Viva-La-Vida-(Celebnob.com).mp3" id="song"></audio>
+	<section>
+		<p id="copy">When winter comes, the air grows cold and the days<br>become shorter. People wear warm coats and drink hot<br>chocolate, while children hope for snow. Although<br>winter can be harsh, many enjoy the change of<br>seasons. The landscape transforms, and nature rests<br>before spring returns.</p>
+		<p id="show"></input>
+	</section>
+	<button id="submit">Submit</button>
+	<div class="img">
+		<div class="showResult">
+			<div class="range">
+				<h6>Error Count</h6>
+				<input type="range" disabled value="0" id="errorCountOutput">
+				<h6>Completion Range</h6>
+				<input type="range" disabled value="0" id="completionRange">
+			</div>
+			<div><h2 id="wpm">0wpm</h2></div>
+			<button id="submit2">Submit</button>
+		</div>
+		<img src="images/initial.png" alt="">
+	</div>
+	<div class="splash">
+		<p>Beacon is not available for your mobile screen</p>
+	</div>
+	<div class="confirm">
+		<p>Are you sure you want to quit?</p>
+		<div class="confirmHolder">
+			<button id="yes">Yes</button>
+			<button id= "no">No</button>
+		</div>
+	</div>
+	<div class="pause">
+		<p>username: <span id="name">username</span></p>
+		<p>Current level: <span id="currentLevel"></span></p>
+		<p>Reached level: <span id="reachedLevel">level</span></p>
+		<div>
+			<button id="selectLevel">Select level</button>
+			<button id="resume">Resume</button>
+		</div>
+	</div>
+</body>
+<script src="script.js"></script>
+<script>
+	let username = localStorage.getItem("TiluxBeaconUsername")
+	let levelCount = localStorage.getItem("TiluxBeaconLevelCount")
+	console.log(localStorage);
+	let HighestWpm = 25
+
+	// levelCount = localStorage.getItem("TiluxBeacon", levelCount)
+	if(username == null){
+		alert("Pls login to your account")
+		window.location.href = "register.html"
+	}
+	if (levelCount == null){
+		alert("Error getting your level")
+		window.location.href = "register.html"
+	}
+	if(!(parseInt(levelCount) >= 2)){
+		alert("pls go back to your level")
+		window.location.href = "level.html"
+	}
+	else{
+		header.innerHTML =   `
+	<h3>username: ${username}</h3>`   
+		// alert(levelCurrentCount)
+		levelCount = 2
+		Dashboard()
+	}
+</script>
+</html>
