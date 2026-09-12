@@ -1,27 +1,76 @@
-# TiluxBeacon
+# ⌨️ TiluxBeacon
 
-A beacon management dashboard project.
+> **An interactive web-based typing speed training & practice game designed to help developers and learners master typing accuracy, speed, and key placement.**
 
-## About
+Live Demo: [https://tilux-beacon.vercel.app](https://tilux-beacon.vercel.app)
 
-TiluxBeacon is a dashboard oriented project for managing beacon devices, with monitoring views and configuration screens.
+---
 
-## Features
+## 🌟 Overview
 
-- Device monitoring views
-- Configuration screens
-- Dashboard layout
+**TiluxBeacon** is a gamified typing platform engineered to turn touch typing practice into an engaging, progressive challenge. Built with native web technologies, **TiluxBeacon** guides users through multi-tiered typing levels—from basic key placements to complex sentences—while tracking performance metrics in real time.
 
-## Tech Stack
+---
 
-- HTML
-- CSS
-- JavaScript
+## ✨ Features
 
-## Getting Started
+- 📈 **Real-Time Performance Metrics:** Calculates Words Per Minute (WPM), accuracy, and error counts dynamically as you type.
+- 🎯 **Visual Key & Finger Placement Guides:** Displays visual keyboard diagrams and finger cues to reinforce muscle memory and proper ergonomics.
+- 🏆 **Multi-Level Progression System:** Unlocks higher difficulty levels as users achieve WPM milestones and accuracy targets.
+- 💾 **Persistent Progress & High Scores:** Saves player levels, user profiles, and personal records via local storage and server integrations.
+- 🎮 **Gamified Feedback:** Provides visual progress bars, instantaneous error alerts, and victory screens upon level completion.
 
-Clone the repository and open the project in your browser or run it with your preferred local server.
+---
 
-## Author
+## 🛠️ Tech Stack
 
-Tilux01
+- **Frontend:** HTML5, CSS3, JavaScript (DOM Manipulation, Web Storage API, Keyboard Event Handling)
+- **Backend Services:** Python (Flask / Lightweight Web Server)
+- **Deployment:** Vercel / Static Web Host
+
+---
+
+## 🎮 How It Works
+
+1. **User Registration:** Enter your username to track level progress and personal WPM records.
+2. **Select Level:** Start at Level 1 to practice fundamental key positions, or progress through unlocked stages.
+3. **Interactive Practice:** Follow the visual prompts and type the given text passages.
+4. **Instant Feedback:** Watch your live WPM score and progress bar update in real time.
+5. **Level Completion:** Achieve target speed and accuracy thresholds to unlock subsequent levels and set new high scores!
+
+---
+
+## 🚀 Getting Started
+
+### Local Setup
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/Tilux01/TiluxBeacon.git
+   cd TiluxBeacon
+   ```
+
+2. **Run Locally:**
+   - Open `index.html` directly in any modern web browser, OR
+   - Run via a lightweight HTTP server or Python:
+     ```bash
+     python3 app.py
+     # or
+     python3 -m http.server 8000
+     ```
+
+3. Open `http://localhost:8000` in your web browser.
+
+---
+
+## 👤 Author
+
+* **Adekola Israel** ([@Tilux01](https://github.com/Tilux01))
+* **Portfolio:** [portfolio-jet-phi-32.vercel.app](https://portfolio-jet-phi-32.vercel.app/)
+* **LinkedIn:** [Adekola Israel](https://www.linkedin.com/in/israel-adekola-a873872)
+
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
