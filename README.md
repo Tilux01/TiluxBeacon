@@ -17,16 +17,16 @@ Live Demo: [https://tilux-beacon.vercel.app](https://tilux-beacon.vercel.app)
 - **Real-Time Performance Metrics:** Calculates Words Per Minute (WPM), accuracy, and error counts dynamically as you type.
 - **Visual Key & Finger Placement Guides:** Displays visual keyboard diagrams and finger cues to reinforce muscle memory and proper ergonomics.
 - **Multi-Level Progression System:** Unlocks higher difficulty levels as users achieve WPM milestones and accuracy targets.
-- **Persistent Progress & High Scores:** Saves player levels, user profiles, and personal records via local storage and server integrations.
+- **Persistent Progress & High Scores:** Saves player levels, user profiles, and personal records via local storage.
 - **Gamified Feedback:** Provides visual progress bars, instantaneous error alerts, and victory screens upon level completion.
 
 ---
 
 ## Tech Stack
 
-- **Frontend:** HTML5, CSS3, JavaScript (DOM Manipulation, Web Storage API, Keyboard Event Handling)
-- **Backend Services:** Python (Flask / Lightweight Web Server)
-- **Deployment:** Vercel / Static Web Host
+- **HTML5:** Semantic structure and interactive elements.
+- **CSS3:** Responsive layout, dashboard styling, and visual key indicator interfaces.
+- **JavaScript (ES6+):** Keyboard event handling, real-time WPM & accuracy logic, level progression state, and Web Storage API (localStorage).
 
 ---
 
@@ -51,15 +51,7 @@ Live Demo: [https://tilux-beacon.vercel.app](https://tilux-beacon.vercel.app)
    ```
 
 2. **Run Locally:**
-   - Open `index.html` directly in any modern web browser, OR
-   - Run via a lightweight HTTP server or Python:
-     ```bash
-     python3 app.py
-     # or
-     python3 -m http.server 8000
-     ```
-
-3. Open `http://localhost:8000` in your web browser.
+   - Open `index.html` directly in any web browser.
 
 ---
 
