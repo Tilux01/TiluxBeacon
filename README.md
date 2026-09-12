@@ -1,4 +1,4 @@
-# ⌨️ TiluxBeacon
+# TiluxBeacon
 
 > **An interactive web-based typing speed training & practice game designed to help developers and learners master typing accuracy, speed, and key placement.**
 
@@ -6,23 +6,23 @@ Live Demo: [https://tilux-beacon.vercel.app](https://tilux-beacon.vercel.app)
 
 ---
 
-## 🌟 Overview
+## Overview
 
-**TiluxBeacon** is a gamified typing platform engineered to turn touch typing practice into an engaging, progressive challenge. Built with native web technologies, **TiluxBeacon** guides users through multi-tiered typing levels—from basic key placements to complex sentences—while tracking performance metrics in real time.
-
----
-
-## ✨ Features
-
-- 📈 **Real-Time Performance Metrics:** Calculates Words Per Minute (WPM), accuracy, and error counts dynamically as you type.
-- 🎯 **Visual Key & Finger Placement Guides:** Displays visual keyboard diagrams and finger cues to reinforce muscle memory and proper ergonomics.
-- 🏆 **Multi-Level Progression System:** Unlocks higher difficulty levels as users achieve WPM milestones and accuracy targets.
-- 💾 **Persistent Progress & High Scores:** Saves player levels, user profiles, and personal records via local storage and server integrations.
-- 🎮 **Gamified Feedback:** Provides visual progress bars, instantaneous error alerts, and victory screens upon level completion.
+**TiluxBeacon** is a gamified typing platform engineered to turn touch typing practice into an engaging, progressive challenge. Built with native web technologies, **TiluxBeacon** guides users through multi-tiered typing levels - from basic key placements to complex sentences - while tracking performance metrics in real time.
 
 ---
 
-## 🛠️ Tech Stack
+## Features
+
+- **Real-Time Performance Metrics:** Calculates Words Per Minute (WPM), accuracy, and error counts dynamically as you type.
+- **Visual Key & Finger Placement Guides:** Displays visual keyboard diagrams and finger cues to reinforce muscle memory and proper ergonomics.
+- **Multi-Level Progression System:** Unlocks higher difficulty levels as users achieve WPM milestones and accuracy targets.
+- **Persistent Progress & High Scores:** Saves player levels, user profiles, and personal records via local storage and server integrations.
+- **Gamified Feedback:** Provides visual progress bars, instantaneous error alerts, and victory screens upon level completion.
+
+---
+
+## Tech Stack
 
 - **Frontend:** HTML5, CSS3, JavaScript (DOM Manipulation, Web Storage API, Keyboard Event Handling)
 - **Backend Services:** Python (Flask / Lightweight Web Server)
@@ -30,7 +30,7 @@ Live Demo: [https://tilux-beacon.vercel.app](https://tilux-beacon.vercel.app)
 
 ---
 
-## 🎮 How It Works
+## How It Works
 
 1. **User Registration:** Enter your username to track level progress and personal WPM records.
 2. **Select Level:** Start at Level 1 to practice fundamental key positions, or progress through unlocked stages.
@@ -40,7 +40,7 @@ Live Demo: [https://tilux-beacon.vercel.app](https://tilux-beacon.vercel.app)
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Local Setup
 
@@ -63,7 +63,7 @@ Live Demo: [https://tilux-beacon.vercel.app](https://tilux-beacon.vercel.app)
 
 ---
 
-## 👤 Author
+## Author
 
 * **Adekola Israel** ([@Tilux01](https://github.com/Tilux01))
 * **Portfolio:** [portfolio-jet-phi-32.vercel.app](https://portfolio-jet-phi-32.vercel.app/)
@@ -71,6 +71,6 @@ Live Demo: [https://tilux-beacon.vercel.app](https://tilux-beacon.vercel.app)
 
 ---
 
-## 📄 License
+## License
 
 This project is open-source and available under the [MIT License](LICENSE).
